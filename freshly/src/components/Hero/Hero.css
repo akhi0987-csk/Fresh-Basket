@@ -1,0 +1,105 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: linear-gradient(135deg, #b7ff9a 0%, #037222 100%);
+    color: #fff;
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .shop-now-button {
+    padding: 15px 30px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .shop-now-button:hover {
+    background-color: #218838;
+  }
+  
+  .hero-animation {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .animation-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .bubble {
+    position: absolute;
+    bottom: -100px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: rise 10s infinite ease-in-out;
+  }
+  
+  .bubble1 {
+    width: 80px;
+    height: 80px;
+    left: 20%;
+    animation-delay: 0s;
+  }
+  
+  .bubble2 {
+    width: 120px;
+    height: 120px;
+    left: 40%;
+    animation-delay: 2s;
+  }
+  
+  .bubble3 {
+    width: 60px;
+    height: 60px;
+    left: 60%;
+    animation-delay: 4s;
+  }
+  
+  .bubble4 {
+    width: 100px;
+    height: 100px;
+    left: 80%;
+    animation-delay: 6s;
+  }
+  
+  @keyframes rise {
+    0% {
+      bottom: -100px;
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    50% {
+      opacity: 0.8;
+    }
+    100% {
+      bottom: 100%;
+      opacity: 0;
+      transform: scale(1);
+    }
+  }
+  
